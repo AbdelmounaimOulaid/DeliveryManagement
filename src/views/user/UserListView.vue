@@ -143,6 +143,11 @@ export default {
                         type: 'error'
                     })
                 }
+
+                this.$alert({
+                        title: 'Something wrong happend. Please try again',
+                        type: 'error'
+                    })
             }
         )
   }

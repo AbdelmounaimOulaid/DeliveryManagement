@@ -100,7 +100,7 @@ export default {
         {
             prop: 'status',
             name: 'Active',
-            filter: 'userStatus',
+            filter: false,
             size: 100,
             cellTemplate: VGridVueTemplate(UserStatus)
         },

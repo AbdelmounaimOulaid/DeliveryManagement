@@ -79,7 +79,7 @@ export const links = [
         module: 'sale',
         title: 'Sales',
         hasChildren: true,
-        gate: 'all', 
+        gate: 'sale_access', 
         icon: {
             type: 'icon',
             value: 'mdi-sale'
@@ -89,8 +89,29 @@ export const links = [
                 id: 1,
                 title: 'Sales list',
                 subModule: 'sale/list',
-                gate: 'all',
+                gate: 'sale_show',
                 to: '/sales'
+            },
+        ]
+    },
+
+    {
+        id: 3,
+        module: 'order',
+        title: 'Orders',
+        hasChildren: true,
+        gate: 'order_access', 
+        icon: {
+            type: 'icon',
+            value: 'mdi-sale'
+        },
+        children: [
+            {
+                id: 1,
+                title: 'Orders list',
+                subModule: 'order/list',
+                gate: 'order_show',
+                to: '/orders'
             },
         ]
     },

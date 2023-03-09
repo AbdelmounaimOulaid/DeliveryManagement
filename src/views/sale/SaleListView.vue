@@ -63,8 +63,12 @@ export default {
           name: 'Upsell',
         },
         {
-          prop: 'status',
-          name: 'Status',
+          prop: 'confirmation',
+          name: 'Confirmation',
+        },
+        {
+          prop: 'delivery',
+          name: 'Delivery',
         },
         {
           prop: 'affectation',

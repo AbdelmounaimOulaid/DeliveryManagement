@@ -5,7 +5,7 @@ class Sale {
 
     async all() {
         await Csrf.getCookie();
-        return Api.get('api/orders');
+        return Api.get('api/sales');
     }
 }
 

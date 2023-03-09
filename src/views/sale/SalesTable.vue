@@ -42,6 +42,9 @@
                         <SaleConfirmation />
                     </td>
                     <td class="tw-px-6 tw-py-4">
+                        <SaleDelivery />
+                    </td>
+                    <td class="tw-px-6 tw-py-4">
                         <SaleAffectation />
                     </td>
                     <td class="tw-px-6 tw-py-4">
@@ -69,10 +72,11 @@
 import SaleConfirmation from '@/views/sale/partials/SaleConfirmation'
 import SaleUpsell from '@/views/sale/partials/SaleUpsell'
 import SaleAffectation from '@/views/sale/partials/SaleAffectation'
+import SaleDelivery from '@/views/sale/partials/SaleDelivery'
 
 export default {
     props: [ 'columns', 'sales' ],
-    components: { SaleConfirmation, SaleUpsell, SaleAffectation },
+    components: { SaleConfirmation, SaleDelivery ,SaleUpsell, SaleAffectation },
 
     methods: {
     }
